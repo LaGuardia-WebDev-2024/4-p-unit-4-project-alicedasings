@@ -19,12 +19,35 @@ Select ONE Additional Feature to Add
 <head>
   <title>Project: Recipe book</title>
   <meta charset="utf-8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+
   <style>
     h1 {color:rgb(255, 115, 115)}
+    h1 {font-family: "Short Stack", cursive;}
     h2 {color:rgb(223, 110, 44)}
     body {background-color: rgb(255, 205, 164)}
     body {cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🍪</text></svg>")16 0,auto; /*!emojicursor.app*/}
 
+    li::marker {
+      content: " 💛 ";
+      font-size: 1.2em;
+      color:yellow;
+    }
+
+    #ginger {
+      font-family:cursive;
+    }
+
+    #blonde {
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #exto {
+      font-family:monospace
+    }
 
   </style>
 </head>
@@ -34,11 +57,9 @@ Select ONE Additional Feature to Add
 <center><img src="https://media.istockphoto.com/id/614975228/vector/christmas-dinner.jpg?s=612x612&w=0&k=20&c=_XZrHg_rOZMyTjO-VDCqxviQT0w7IiB2P--ApAo8AI8="</center>
   <h2>Contents:</h2>
 
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  </ol>
 
-  <h2 id="?">Recipe #1: Ginger Snaps!!</h2>
+
+  <h2 id="ginger">Recipe #1: Ginger Snaps!!</h2>
   <img src=
   "https://www.lifeasastrawberry.com/wp-content/uploads/2017/12/gingersnaps.jpg" width="300" height="300"
 >
@@ -113,7 +134,7 @@ Select ONE Additional Feature to Add
 
   <p><em>Source: <a href="https://www.lovefromtheoven.com/gingerbread-cookies/#wprm-recipe-container-37952">The BEST Gingerbread Cookies!!</a></em></p>
 
-  <h2>Recipe #2: Blonde Hot Chocolate</h2>
+  <h2 id="blonde">Recipe #2: Blonde Hot Chocolate</h2>
   <img src="https://www.theanthonykitchen.com/wp-content/uploads/2025/08/White-Hot-Chocolate-5.jpg" width="300" length="500" <br>
   
   <h3>Ingrediants</h3>
@@ -126,7 +147,7 @@ Select ONE Additional Feature to Add
 <li> sea salt</li>
  </ul>
 
- <h3>Extra Toppings(optional)</h3>
+ <h3 id="exto">Extra Toppings(optional)</h3>
  <li>whipped cream</li>
  <li>marshmellows</li>
  <li>shaved white chocolate</li>
